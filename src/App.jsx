@@ -63,7 +63,7 @@ const App = () => {
       sum + (Number(pickup.actualSalePrice) || 0), 0);
     const totalMiles = data.reduce((sum, pickup) => 
       sum + (Number(pickup.distance) || 0), 0);
-    const totalGasCost = totalMiles * (settings.gasPrice / 20); // Assuming 20 MPG average
+    const totalGasCost = totalMiles * (settings.gasPrice / 14); // 14 MPG average
     const totalHours = data.reduce((sum, pickup) => {
       const pickupTime = Number(pickup.timePickup) || 0;
       const prepTime = Number(pickup.timePrep) || 0;
